@@ -11,7 +11,7 @@
 		<script>
 		if (!window.altspace) document.write('<h3>To view this example, please open this page in <a href="http://altvr.com"> AltspaceVR </a></h3>');
 
-		var text = "Hello World";
+		var text = "Welcome";
 
 		//Setup
 		var scene = new THREE.Scene();
@@ -25,7 +25,7 @@
 		function createTextAndAddToScene(font) {
 			//Text
 			var geometry = new THREE.TextGeometry(text, {font: font});
-			var material = new THREE.MeshBasicMaterial({color:'green'});
+			var material = new THREE.MeshBasicMaterial({color:'White'});
 			var mesh = new THREE.Mesh(geometry, material);
 			mesh.position.x = -400;
 			mesh.scale.z = 0.3;
